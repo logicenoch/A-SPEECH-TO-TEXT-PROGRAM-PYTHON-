@@ -29,7 +29,7 @@ def getFileName():
 def getAudioData(filename):
     # Gets the Audiofile instance of the file,
     # Reads the content of the Audiofile instance,
-    # Performs a bit DSP on the audo file(ambient noise),
+    # Performs a bit DSP on the audio file(ambient noise reduction),
     # and returns the audio data object of the Audiofile instance.
     audf_instance = sr.AudioFile(filename)
     print(f"Reading {filename}...")

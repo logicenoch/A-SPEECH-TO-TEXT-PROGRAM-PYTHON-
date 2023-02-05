@@ -49,12 +49,12 @@ def getTranscription(aud_data):
     try:
         print("Transcribing the audio file...")
         sleep(5)
-        transcribed = rEngine.recognize_google(aud_data, language="en-USA")
+        transcription = rEngine.recognize_google(aud_data, language="en-USA")
     except Exception as error:
         print(f"An error occurred during transcription, {error}")
         return None
 
-    return transcribed
+    return transcription
 
 
 def main():
